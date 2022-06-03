@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Survey Form</h1>
+
+    <body>
+        <p id="description">Thank you for taking the time to complete this survey!</p>
+    </body>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name
+          <input required id="name" type="text" placeholder="Enter your name"></input></label>
+            <label id="email-label">Email
+          <input required type="email" id="email" placeholder="Enter your email"></input></label>
+            <label id="number-label">Age (optional)
+          <input min="0" max="100" type="number" id="number" placeholder="Age"></input></label>
+        </fieldset>
+        <fieldset>
+            <label>What is your main love language?
+        <select id="dropdown" type="checkbox">
+          <option></option>
+          <option>Physical Touch</option>
+          <option>Quality Time</option>
+          <option>Acts of Service</option>
+          <option>Words of Affirmation</option>
+          <option>Gifts Giving</option>
+          </select>
+        </label>
+            <label>Are you an extrovert?
+        <label><input class="inline" name="recommend" type="radio" value="1"></input> No</label>
+            <label><input class="inline" name="recommend" type="radio" value = "1"> Yes</input></label>
+            </label>
+            <label>What animals do you like?
+        <label><input class="inline" value="2" type="checkbox">Cat</input></label>
+            <label><input class="inline" value="3" type="checkbox">Dog</input></label>
+            <label><input class="inline" value="3" type="checkbox">Duck</input></label>
+            <label><input class="inline" value="1" type="checkbox">Bunny</input></label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Leave a nice message !
+          <textarea name="comments" placeholder="" id="comments" rows="5" cols="30" ></textarea>
+          </input>
+        </label>
+        </fieldset>
+        <input type="submit" id="submit" />
+    </form>
+</head>
+
+</html>
